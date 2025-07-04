@@ -14,8 +14,9 @@
 
 body {
   min-height: 100vh;
-  width: auto;
-  background-color: var(--dark);
+  width: 100%;
+  background-color: var(--superdark);
+  overflow-x: hidden;
 }
 
 nav {
