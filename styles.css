@@ -1,0 +1,796 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --superlight: #fff;
+  --neutral: #f2b05e;
+  --dark: #a62103;
+  --superdark: #031323;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--superdark);
+}
+
+nav {
+  margin: 20px 20px;
+}
+
+.mainImg-container {
+  height: 150px;
+  overflow: hidden;
+}
+
+.mainImg-container img {
+  clip-path: inset(30px 0px 0px 0px);
+  width: 500px;
+}
+
+.navlinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+
+.navlinks a {
+  color: var(--neutral);
+  text-decoration: none;
+  padding: 0.5em 1em;
+  display: block;
+}
+
+.navlinks a:hover {
+  color: var(--superlight);
+  transition: ease 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: var(--superlight);
+}
+
+.mobile-menu:hover {
+  color: var(--neutral);
+  transition: ease 0.3s;
+}
+
+.desktop-menu {
+  display: none;
+  background-color: var(--superdark);
+  padding: 1em;
+  text-align: center;
+}
+
+.desktop-menu li {
+  margin: 1em 0;
+}
+
+.desktop-menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.8em 0;
+}
+
+.desktop-menu a:hover {
+  color: var(--neutral);
+  transition: ease 0.3s;
+}
+
+.mainTitle {
+  margin: 20px 20px;
+  text-align: center;
+}
+
+.mainTitle h1 {
+  color: var(--superlight);
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.mainTitle h1 span {
+  color: var(--neutral);
+}
+
+.mainTitle h3 {
+  color: var(--neutral);
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.mainTitle h3 span {
+  color: var(--superlight);
+}
+
+.main-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 70px;
+}
+
+.menu {
+  background-color: var(--dark);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.menu:hover {
+  background-color: var(--superlight);
+  color: var(--dark);
+  transition: 0.3s ease;
+}
+
+.order {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.order:hover {
+  background-color: white;
+  color: var(--dark);
+  transition: 0.3s ease;
+}
+
+.main-banner {
+  color: #fff;
+}
+
+.banner-container h3 {
+  color: var(--superlight);
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.banner-container p {
+  text-align: center;
+  margin: 40px 40px;
+  color: var(--neutral);
+}
+
+.banner-socials {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  color: var(--dark);
+}
+
+.banner-socials i {
+  margin: 30px 0px;
+}
+
+.icon-banner {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-banner i {
+  color: var(--dark);
+  font-size: 20px;
+  margin: 30px 0px;
+}
+
+.icon-banner p {
+  color: var(--superlight);
+}
+
+.best-Seller h3 {
+  text-align: center;
+  color: var(--neutral);
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+#pizza {
+  height: 300vh;
+  margin-top: 20px;
+  background-color: var(--superlight);
+  padding-top: 20px;
+}
+
+#pizza h4 {
+  color: var(--superdark);
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#pizza h3 {
+  color: var(--superdark);
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+.pizza-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: center;
+}
+
+.pizza {
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px var(--superdark);
+  border-radius: 50px;
+  margin: 30px;
+  margin-top: 50px;
+  background-color: var(--superlight);
+}
+
+.pizza img {
+  width: 80%;
+  margin-left: 170px;
+  height: 200px;
+  margin-bottom: 28px;
+}
+
+.pizza-content .pizza-name {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.pizza-content p {
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.3;
+  color: var(--dark);
+}
+
+.pizza-content .pizza-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--neutral);
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: var(--superdark);
+  box-shadow: 0px 2px 4px var(--tertiary);
+}
+
+.pizza-content .pizza-btn:hover {
+  color: var(--superlight);
+  background-color: var(--dark);
+  transition: ease 0.3s;
+}
+
+#menu {
+  height: 190vh;
+  width: 100%;
+}
+
+#menu h1 {
+  color: var(--superlight);
+  text-align: center;
+  margin: 50px;
+}
+
+#menu h2 {
+  color: var(--superlight);
+  text-align: center;
+  margin: 30px;
+}
+
+#menu p {
+  color: var(--neutral);
+  text-align: center;
+  margin: 20px;
+}
+
+#btns {
+  width: 100%;
+  position: relative;
+  padding: 0px 30px;
+}
+
+.fil-p {
+  padding: 15px 20px;
+  background-color: var(--neutral);
+  margin: 0 5px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: justify;
+}
+
+.fil-p:hover {
+  background-color: var(--dark);
+  transition: ease 0.3s;
+  color: var(--superlight);
+}
+
+#root {
+  display: grid;
+  grid-template-columns: repeat(2, 8fr);
+  gap: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.img-box > h3 {
+  margin-bottom: 0px;
+  color: var(--neutral);
+  text-align: center;
+}
+
+.bottom {
+  margin-bottom: -20px;
+}
+
+.img-box {
+  width: 100%;
+  height: 200px;
+}
+
+.images {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 0px;
+}
+
+#root .box:first-child .images {
+  max-height: 100vh;
+  max-width: 110%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 20px;
+}
+
+#root .box:nth-child(5) .images {
+  max-height: 100vh;
+  max-width: 110%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 30px;
+}
+
+.product-button button {
+  padding: 10px 20px;
+  background-color: var(--neutral);
+  border: none;
+  border-radius: 50px;
+}
+
+.product-button button:hover {
+  background-color: var(--dark);
+  color: var(--superlight);
+  transition: ease 0.3s;
+}
+
+#contact {
+  background-color: var(--superlight);
+  padding: 30px;
+  width: 100%;
+  height: 100vh;
+}
+
+#contact h2 {
+  text-align: center;
+  color: var(--dark);
+  margin-top: 30px;
+}
+
+#contact h3 {
+  color: var(--neutral);
+  margin-top: 40px;
+}
+
+#contact h1 {
+  color: var(--superdark);
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+#contact p {
+  color: var(--superdark);
+  margin-top: 10px;
+}
+
+#contact .contactBtn {
+  margin-top: 30px;
+  padding: 20px 50px;
+  background-color: var(--superdark);
+  border: 10px solid var(--neutral);
+  color: var(--superlight);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#contact .contactBtn:hover {
+  color: var(--superdark);
+  background-color: var(--superlight);
+  transition: ease 0.4s;
+}
+
+#contact .bookTbl {
+  margin-top: 50px;
+  text-align: center;
+}
+
+form {
+  margin: 5px;
+}
+
+form #name {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+form #email {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+form #persons {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0px 20px 0 20px;
+}
+
+form #date {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+.bookNow {
+  padding: 15px 40px;
+  margin-top: 40px;
+  margin-left: 130px;
+  border-radius: 50px;
+  border: 1px solid var(--superdark);
+  background-color: var(--superdark);
+  color: var(--superlight);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.bookNow:hover {
+  color: var(--superdark);
+  background-color: var(--superlight);
+  transition: 0.4s;
+}
+
+.bestChef {
+  height: 65vh;
+  width: 100%;
+}
+
+.bestChef .title {
+  color: var(--neutral);
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.bestChef h1 {
+  color: var(--superlight);
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.person-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.person-wrapper {
+  max-width: 1000px;
+  margin: 0 40px 35px;
+  padding: 20px 10px;
+}
+
+.person-list,
+.person-item {
+  list-style: none;
+  background-color: var(--superlight);
+  border-radius: 10px;
+  height: 35vh;
+}
+
+.person-list .person-image {
+  width: 100%;
+  max-height: 250px;
+  aspect-ratio: 7/9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.person-list .role {
+  color: var(--dark);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.person-list .person-name {
+  color: var(--superdark);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.person-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background-color: var(--superlight);
+}
+
+.person-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.person-wrapper .swiper-slide-button {
+  color: var(--superlight);
+}
+
+.person-wrapper .swiper-slide-button:hover {
+  color: var(--neutral);
+  transition: ease 0.3s;
+}
+
+.reviews {
+  margin-top: 10px;
+  height: 100vh;
+  width: 100%;
+}
+
+.reviews h2 {
+  color: var(--neutral);
+  text-align: center;
+  font-size: 30px;
+}
+
+.reviews h1 {
+  color: var(--superlight);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.reviews .slideshow-container {
+  width: 85vw; /* Slightly smaller width for better framing */
+  max-width: 900px; /* Max width for larger screens */
+  height: 60vh; /* Fixed height for the visible window of the slideshow */
+  position: relative; /* For absolute positioning of slides */
+  overflow: hidden; /* Hide overflow to create the slide effect */
+  background-color: #1a202c; /* Dark background for the container */
+  border-radius: 12px; /* Rounded corners for the container */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* More prominent shadow */
+  margin: 0 auto; /* Center the slideshow within the reviews section */
+}
+
+/* Individual Slide Styling - now scoped under .reviews */
+.reviews .slide {
+  width: 100%; /* Full width of the slideshow container */
+  height: 100%; /* Full height of the slideshow container */
+  position: absolute; /* Absolute positioning within the container */
+  top: 0; /* Start at the top of the container */
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff; /* White text color */
+  text-align: center;
+  transition: transform 0.8s ease-in-out; /* Smooth transition for slide movement */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  padding: 20px; /* Some padding for content */
+  border-radius: 12px; /* Rounded corners for slides */
+  background-size: cover; /* Cover the entire slide area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+/* Image styling within slides - now scoped under .reviews */
+.reviews .slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensure the entire image is visible, scale down if needed */
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for images */
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--superlight);
+}
+
+.about h2 {
+  padding-top: 50px;
+  color: var(--neutral);
+  text-align: center;
+  font-size: 30px;
+}
+
+.about h1 {
+  color: var(--superdark);
+  text-align: center;
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.p-about {
+  margin-top: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.about-more {
+  margin-top: 20px;
+  margin-left: 160px;
+  padding: 20px 40px;
+  border-radius: 50px;
+  border: 1px solid var(--neutral);
+  color: var(--superlight);
+  font-weight: 600;
+  background-color: var(--neutral);
+  font-size: 15px;
+}
+
+.about-more:hover {
+  background-color: var(--superlight);
+  color: var(--neutral);
+  transition: ease 0.3s;
+}
+
+.about-image {
+  height: 40vh;
+  width: 50%;
+  margin: 80px 130px;
+}
+
+/* Responsive adjustments for slideshow - now scoped under .reviews */
+@media (max-width: 768px) {
+  /* .promo-title {
+                font-size: 2em;
+            } */
+  .reviews .slideshow-container {
+    width: 90vw;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  /* .promo-title {
+                font-size: 1.8em;
+            } */
+  .reviews .slideshow-container {
+    width: 95vw;
+    height: 40vh;
+  }
+}
+
+/* Reviews Section Styles (updated to accommodate slideshow) */
+.reviews {
+  background-color: #f0f0f0; /* Light background for the reviews section */
+  padding: 80px 20px;
+  text-align: center;
+  display: flex; /* Use flexbox for centering content */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.reviews p.subtitle {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 50px; /* Space between subtitle and slideshow */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: var(--superdark);
+  height: 20vh;
+  width: 100%;
+}
+
+.footer-cotainer {
+  text-align: center;
+}
+
+.primaryFooter span {
+  color: var(--neutral);
+}
+
+.primaryFooter {
+  color: var(--superlight);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.secondaryFooter {
+  color: var(--superlight);
+
+  margin-top: 20px;
+}
+
+.tertiaryFooter {
+  color: var(--superlight);
+  margin-top: 20px;
+}
+
+.fourthFooter {
+  color: var(--superlight);
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none !important;
+  }
+
+  .desktop-menu {
+    display: none !important;
+  }
+
+  .navlinks {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .navlinks {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .desktop-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
