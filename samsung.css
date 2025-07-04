@@ -15,7 +15,7 @@
 body {
   min-height: 100vh;
   min-height: 100dvh;
-  background-color: var(--superdark);
+  background-color: var(--dark);
   overflow-x: hidden;
 }
 
