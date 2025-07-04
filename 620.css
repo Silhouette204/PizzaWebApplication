@@ -55,7 +55,7 @@
   }
 
   .bookNow {
-    margin-left: 190px;
+    margin-left: 90px;
   }
 
   .about {
@@ -70,5 +70,6 @@
 
   .about-image {
     width: 40%;
+    margin: 80px 200px;
   }
 }
