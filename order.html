@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="order.css" />
+    <title>Pizza App Order System</title>
+  </head>
+  <body>
+    <section class="mainSection">
+      <nav>
+        <div class="mobile-menu">&#9776;</div>
+        <ul class="navlinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Contact Us</a></li>
+          <li><a href="index.html">Pizza</a></li>
+          <li><a href="order.html">Order now</a></li>
+        </ul>
+        <ul class="desktop-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Contact Us</a></li>
+          <li><a href="index.html">Pizza</a></li>
+          <li><a href="order.html">Order now</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="customerInfo">
+      <h1>Pizza Ordering System</h1>
+
+      <div class="container">
+        <div class="person-detail">
+          <h2>Enter your Details</h2>
+
+          <form>
+            <div class="info">
+              <label for="customerName" class="customerName">Name: </label>
+              <input
+                type="text"
+                id="customerName"
+                placeholder="Your Full Name"
+              />
+            </div>
+
+            <div class="info">
+              <label for="customerAddress" class="customerAddress"
+                >Address:
+              </label>
+              <input
+                type="text"
+                id="customerAddress"
+                placeholder="Street, City, Postcode"
+              />
+            </div>
+
+            <div class="info">
+              <label for="customerNumber" class="customerNumber"
+                >Contact No:
+              </label>
+              <input
+                type="text"
+                id="customerNumber"
+                placeholder="e.g., +1234567890"
+              />
+            </div>
+
+            <div class="info">
+              <label for="customerEmail" class="customerEmail">Email: </label>
+              <input
+                type="text"
+                id="customerEmail"
+                placeholder="your.email@example.com"
+              />
+            </div>
+
+            <div class="info">
+              <label for="customerCountry" class="customerCountry"
+                >Country:
+              </label>
+              <input
+                type="text"
+                id="customerCountry"
+                placeholder="e.g., United States"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="pizzaInfo">
+      <h2>Build your Pizza</h2>
+
+      <div class="pizzaInfo">
+        <h3>Size</h3>
+        <div class="radio-group" id="pizzaSize">
+          <label
+            ><input type="radio" name="pizzaSize" value="Small" /><span
+              >Small</span
+            ></label
+          >
+          <label
+            ><input type="radio" name="pizzaSize" value="Medium" /><span
+              >Medium</span
+            ></label
+          >
+          <label
+            ><input type="radio" name="pizzaSize" value="Large" /><span
+              >Large</span
+            ></label
+          >
+        </div>
+      </div>
+
+      <div class="pizzaInfo">
+        <h3>TYPE OF PIZZA</h3>
+
+        <div class="radio-group" id="pizzaType">
+          <label
+            ><input type="radio" name="pizzaType" value="Ham and Cheese" /><span
+              >Ham and Cheese</span
+            ></label
+          >
+          <label
+            ><input type="radio" name="pizzaType" value="Hawaiian" /><span
+              >Hawaiian</span
+            ></label
+          >
+          <label
+            ><input type="radio" name="pizzaType" value="Pepperoni" /><span
+              >Pepperoni</span
+            ></label
+          >
+          <label
+            ><input type="radio" name="pizzaType" value="Veggie" /><span
+              >Veggie</span
+            ></label
+          >
+          <label
+            ><input type="radio" name="pizzaType" value="Italian" /><span
+              >Italian</span
+            ></label
+          >
+        </div>
+      </div>
+
+      <div class="pizzaInfo">
+        <h3>TOPPINGS</h3>
+        <div class="checkbox-group" id="pizzaToppings">
+          <label
+            ><input type="checkbox" name="topping" value="Extra Cheese" /><span
+              >Extra Cheese</span
+            ></label
+          >
+          <label
+            ><input type="checkbox" name="topping" value="Mushrooms" /><span
+              >Mushrooms</span
+            ></label
+          >
+          <label
+            ><input type="checkbox" name="topping" value="Onions" /><span
+              >Onions</span
+            ></label
+          >
+          <label
+            ><input type="checkbox" name="topping" value="Bell Peppers" /><span
+              >Bell Peppers</span
+            ></label
+          >
+          <label
+            ><input type="checkbox" name="topping" value="Olives" /><span
+              >Olives</span
+            ></label
+          >
+          <label
+            ><input type="checkbox" name="topping" value="Pepperoni" /><span
+              >Pepperoni</span
+            ></label
+          >
+          <label
+            ><input type="checkbox" name="topping" value="Sausage" /><span
+              >Sausage</span
+            ></label
+          >
+        </div>
+      </div>
+
+      <div class="pizzaInfo">
+        <h3>TYPE OF CRUST</h3>
+        <div class="radio-group" id="crustType">
+          <label
+            ><input type="radio" name="crustType" value="Thin" /><span
+              >Thin</span
+            ></label
+          >
+          <label
+            ><input type="radio" name="crustType" value="Thick" /><span
+              >Thick</span
+            ></label
+          >
+        </div>
+      </div>
+
+         <div class="pizzaInfo">
+               <h3>QUANTITY</h3>
+                <input type="number" id="pizzaQuantity" class="focus:outline-none focus:ring-2 focus:ring-blue-500" value="1" min="1" max="5">
+                <p>Please enter how many (1-5).</p>
+            </div>
+
+            <button id="addPizzaBtn">
+                Add Pizza to Order
+            </button>
+        </div>
+    </section>
+  </body>
+  <script src="order.js"></script>
+</html>
