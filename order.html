@@ -91,7 +91,7 @@
             </div>
           </form>
         </div>
-      </div>
+    
     </section>
 
     <section id="pizzaInfo">
@@ -218,6 +218,72 @@
             </button>
         </div>
     </section>
+
+   <div class="pizzaInfo">
+    <h2>Your Order Summary</h2>
+    <div id="orderSummary">
+      <ul id="pizzaList" class="summary-list">
+        <li>No pizzas added yet.</li>
+      </ul>
+    </div>
+
+    <div class="totalOrder">
+      <span>Total Order Price: </span>
+      <span id="totalOrderPrice">₱00.0</span>
+    </div>
+
+    <div class="processBtn">
+    <button id="placeOrderBtn">
+      Place Order
+    </button>
+
+    <button id="clearOrderBtn">
+      Clear Order
+    </button>
+    </div>
+   </div>
+
+    <div class="section-card receipt-section col-span-full">
+      <h2>Order Receipt</h2>
+
+      <div class="receipt-content">
+        <div class="receipt-header">
+          <h3>Pizza Order Confirmation</h3>
+          <p class="text-sm" id="receiptHeaderDate"></p>
+          <p class="text-sm" id="receiptCustomerName"></p>
+          <p class="text-sm" id="receiptCustomerAddress"></p>
+        </div>
+
+        <div id="receiptDisplayItems">
+          <p>Place an order to see your receipt.</p>
+        </div>
+      </div>
+
+      <div class="receipt-summary-lines">
+        <div class="subtotal">
+        <span>Subtotal:</span>
+      <span id="receiptDisplaySubtotal">₱00.0</span>
+      </div>
+
+      <div class="tax">
+        <span>Tax(10%): </span>
+        <span id="receiptDisplayTax">₱00.0</span>
+      </div>
+
+<div class="receipt-total-line">
+  <span>Total:</span>
+   <span id="receiptDisplayTotal">₱0.00</span>
+</div>
+      </div>
+
+      <img id="receiptBarcode" class="mx-auto">
+      <button id="copyReceiptDisplayBtn" >
+                Copy Receipt Text
+            </button>
+    </div>
+      </div>
+
+       <div id="messageBox" class="message-box"></div>
   </body>
   <script src="order.js"></script>
 </html>

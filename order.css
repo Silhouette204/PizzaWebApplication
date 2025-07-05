@@ -13,7 +13,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 300vh;
   width: 100%;
   background-color: var(--neutral);
   overflow-x: hidden;
@@ -270,5 +270,159 @@ input[type="email"] {
 #addPizzaBtn:hover {
   background-color: var(--superdark);
   color: var(--neutral);
+  transition: ease 0.3s;
+}
+
+.pizzaInfo h2 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.summary-list li {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--superdark);
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.summary-list li:last-child {
+  border-bottom: none;
+}
+
+.totalOrder span {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.processBtn {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#placeOrderBtn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  color: var(--superlight);
+  background-color: #69b41e;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#placeOrderBtn:hover {
+  background-color: var(--superdark);
+  color: var(--superlight);
+  transition: ease 0.3s;
+}
+
+#clearOrderBtn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  color: var(--superlight);
+  background-color: var(--dark);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#clearOrderBtn:hover {
+  background-color: var(--superdark);
+  color: var(--superlight);
+  transition: ease 0.3s;
+}
+
+.message-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.message-box.show {
+  opacity: 1;
+}
+
+.receipt-section {
+  border: 1px dashed var(--dark);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--superlight);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 50px;
+}
+
+.receipt-header {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed var(--superdark);
+  padding-bottom: 10px;
+}
+
+.receipt-item-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px dotted #e2e8f0;
+}
+
+.receipt-item-line:last-child {
+  border-bottom: none;
+}
+
+.receipt-summary-lines {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--superdark);
+}
+
+.receipt-summary-lines div {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+
+.receipt-total-line {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--superdark); /* Darker color for total */
+}
+
+#receiptBarcode {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  display: block;
+}
+
+#copyReceiptDisplayBtn {
+  margin: 0 120px;
+  padding: 20px;
+  background-color: var(--dark);
+  color: var(--superlight);
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+}
+
+#copyReceiptDisplayBtn:hover {
+  background-color: var(--superdark);
+  color: var(--superlight);
   transition: ease 0.3s;
 }
