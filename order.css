@@ -142,7 +142,8 @@ nav {
 }
 
 #customerInfo {
-  height: 63vh;
+  height: 70vh;
+  margin-top: 20px;
 }
 
 .container {
@@ -154,6 +155,7 @@ nav {
   display: grid;
   gap: 30px;
   grid-template-columns: 1fr;
+  margin-top: 20px;
 }
 
 .person-detail {
