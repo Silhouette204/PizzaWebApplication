@@ -13,7 +13,7 @@
 }
 
 body {
-  min-height: 300vh;
+  min-height: 200vh;
   width: 100%;
   background-color: var(--neutral);
   overflow-x: hidden;
@@ -289,6 +289,11 @@ input[type="email"] {
 
 .summary-list li:last-child {
   border-bottom: none;
+}
+
+.totalOrder {
+  margin-top: 50px;
+  text-align: center;
 }
 
 .totalOrder span {

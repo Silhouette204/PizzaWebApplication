@@ -1,0 +1,14 @@
+@media (min-width: 620px) {
+  #pizzaQuantity {
+    width: 10%;
+    margin-left: 270px;
+  }
+
+  #addPizzaBtn {
+    margin: 50px 0 0 200px;
+  }
+
+  #pizzaList li {
+    margin-left: 50px;
+  }
+}
