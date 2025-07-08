@@ -44,12 +44,11 @@
   }
 
   .bookNow {
-    margin-left: 90px;
+    margin-left: 120px;
   }
 
   .reviews .slideshow-container {
     width: 85vw;
-    margin-left: -10px;
   }
 
   .about {
@@ -57,11 +56,11 @@
   }
 
   .about-more {
-    margin-left: 120px;
+    margin-left: 130px;
   }
 
   .about-image {
-    margin-left: 110px;
+    margin-left: 120px;
   }
 }
 
