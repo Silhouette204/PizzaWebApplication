@@ -8,6 +8,7 @@
 @media screen and (min-width: 452px) {
   body {
     width: 100%;
+    background-color: var(--dark);
   }
 
   .icon-banner {
