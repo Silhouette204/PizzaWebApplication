@@ -12,7 +12,7 @@
     height: 180vh;
   }
   #menu {
-    height: 175vh;
+    height: 200vh;
   }
 
   #menu p {
@@ -49,11 +49,11 @@
   }
 
   .about-more {
-    margin-left: 370px;
+    margin-left: 380px;
   }
   .about-image {
     height: 50vh;
     width: 30%;
-    margin-left: 320px;
+    margin-left: 340px;
   }
 }
